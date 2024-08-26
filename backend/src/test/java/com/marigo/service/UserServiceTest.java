@@ -28,4 +28,12 @@ public class UserServiceTest {
         System.out.println(user.getId());
         Assertions.assertTrue(result);
     }
+
+    @Test
+    void userRegister() {
+        String userAccount = "mmarigotest";
+        String userPassword = "11111111";
+        String checkPassword = "11111111";
+        long result = userService.userRegister(userAccount, userPassword, checkPassword);
+    }
 }
